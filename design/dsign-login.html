@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>SNS</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vender/jquery-3.3.1.min.js"></script>
+    <!-- jquery ui -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="head">
+      <h1 class="site-title">SNS</h1>
+      <p class="user-name"><a href="#">ユーザー登録する</a></p>
+    </header>
+    <main>
+      <div class="wrapper">
+        <section class="login-form">
+          <form>
+            <p>ログイン</p>
+            <label for="name">名前</label><br>
+            <input type="text" name="name"><br>
+            <label for="id">ID</label><br>
+            <input type="text" name="id"><br>
+            <label for="password">パスワード</label><br>
+            <!-- 任意で入力中にパスワードを表示できるようにする -->
+            <input type="password" name="password" id="password"><br>
+            <input type="checkbox" id="password-check">パスワードを表示する<br>
+            <input type="submit" value="ログイン">
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+</html>

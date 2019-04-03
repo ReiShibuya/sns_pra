@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>SNS</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vender/jquery-3.3.1.min.js"></script>
+    <!-- jquery ui -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="head">
+      <h1 class="site-title">SNS</h1>
+      <p class="user-name"><a href="design-user-page.html">ユーザー名</a></p>
+    </header>
+    <main>
+      <div class="wrapper">
+        <!-- 自分とフォローしているユーザーのつぶやきを時系列順で表示(新しい順) -->
+        <!-- 自分の投稿にはいいね出来ないように -->
+        <section class="mur">
+          <p><a href="#">name</a> : id</p>
+          <p>content内容内容</p>
+          <p>date & time</p>
+          <span><a href="#">いいね</a>: 0</span>
+        </section>
+        <section class="mur">
+          <p><a href="#">name</a> : id</p>
+          <p>content</p>
+          <p>date & time</p>
+          <span><a href="#">いいね</a>: 0</span>
+        </section>
+        <section class="mur">
+          <p><a href="#">name</a> : id</p>
+          <p>content</p>
+          <p>時間 & 日付</p>
+          <span><a href="#">いいね</a>: 0</span>
+        </section>
+        <section class="mur">
+          <p><a href="#">name</a> : id</p>
+          <p>content</p>
+          <p>時間 & 日付</p>
+          <span><a href="#">いいね</a>: 0</span>
+        </section>
+      </div>
+      <div class="mur-form">
+        <p>つぶやく</p>
+        <form action="">
+          <textarea name="" id="" cols="30" rows="10" placeholder="何かつぶやけ"></textarea><br>
+          <input type="submit">
+        </form>
+        <button id="btn-close">閉じる</button>
+      </div>
+      <div class="mur-btn">
+        <button id="btn-open">
+          <i class="far fa-comment fa-3x"></i>
+        </button>
+      </div>
+    </main>
+    <footer>
+      <p class="logout-link"><a href="design-logout.html">ログアウトする</a></p>
+    </footer>
+  </body>
+</html>

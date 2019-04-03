@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>SNS</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vender/jquery-3.3.1.min.js"></script>
+    <!-- jquery ui -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="head">
+      <h1 class="site-title">SNS</h1>
+      <p class="user-name"><a href="#">ユーザー名</a></p>
+    </header>
+    <main>
+      <div class="wrapper">
+        <!-- そのユーザーのつぶやきのみを表示 -->
+        <!-- 余力があればそのユーザーのいいねしたつぶやきも表示 -->
+        <div class="profile">
+          <p>ユーザー名</p>
+          <p>ID</p>
+          <p>自己紹介文</p>
+          <p><span><a href="design-follow.html">フォロー数</a>: 0</span>|<span><a href="design-follower.html">フォロワー数</a>: 0</span>|<span>つぶやき数: 0</span></p>
+          <a href="#" id="follow">フォロー</a>
+        </div>
+        <section class="mur">
+          <p><a href="#">name</a> : id</p>
+          <p>content内容内容</p>
+          <p>date & time</p>
+          <span><a href="#">いいね</a>: 0</span>
+        </section>
+        <section class="mur">
+          <p><a href="#">name</a> : id</p>
+          <p>content</p>
+          <p>date & time</p>
+          <span><a href="#">いいね</a>: 0</span>
+        </section>
+        <section class="mur">
+          <p><a href="#">name</a> : id</p>
+          <p>content</p>
+          <p>時間 & 日付</p>
+          <span><a href="#">いいね</a>: 0</span>
+        </section>
+        <section class="mur">
+          <p><a href="#">name</a> : id</p>
+          <p>content</p>
+          <p>時間 & 日付</p>
+          <span><a href="#">いいね</a>: 0</span>
+        </section>
+      </div>
+      <!-- フォロー確認 -->
+      <div class="follow-check">
+        <p>フォローしました</p>
+        <button id="follow-close">閉じる</button>
+      </div>
+
+      <!-- 投稿フォーム -->
+      <div class="mur-form">
+        <p>つぶやく</p>
+        <form action="">
+          <textarea name="" id="" cols="30" rows="10" placeholder="何かつぶやけ"></textarea><br>
+          <input type="submit">
+        </form>
+        <button id="btn-close">閉じる</button>
+      </div>
+      <div class="mur-btn">
+        <button id="btn-open">
+          <i class="far fa-comment fa-3x"></i>
+        </button>
+      </div>
+    </main>
+    <footer>
+      <p class="logout-link"><a href="design-logout.html">ログアウトする</a></p>
+    </footer>
+  </body>
+</html>

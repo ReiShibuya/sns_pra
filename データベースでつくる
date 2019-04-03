@@ -1,0 +1,23 @@
+データベース名: SNS (基本的にただのidは予備というか番号を付けているだけ)
+テーブル: user
+  カラム: id | user_id | user_name | created_at 
+テーブル: follow
+  カラム: id | user_id(自分のユーザーID) | follows_user_id (フォローしているユーザーID) | created_at (フォローした日)
+テーブル: mur(つぶやき)
+  カラム: content_id | content(つぶやきの内容) | user_id(つぶやいた人のID) | created_at(つぶやいた日時) | (reply_content_id (存在するなら返信したつぶやきのid))←いらないかも
+テーブル: favo(いいね)
+  カラム: id | user_id(いいねしたユーザーのid) | content_id(いいねしたつぶやきのid)
+テーブル: user_info
+  カラム: id | user_id(passwordに対応するuserテーブルのuser_id) | password(ログインパスワード) | (login_id(user_idとは別に作るべきか迷い中))
+
+
+紐付けるのはuser_id(user, follow, mur, fav, user_info), content_id(mur, favo)
+
+
+サンプルユーザー(名前, user_id, password, フォローしているユーザー)
+田中, tanaka
+山田, yamada
+テル, teru
+ヒサシ, hisashi
+タクロウ, takuro
+ジロウ, jiro

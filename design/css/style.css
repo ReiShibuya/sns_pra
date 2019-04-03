@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: 0.25rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(228, 255, 224);
+}
+
+/* ヘッダー */
+
+.head {
+  margin: 2% 0;
+  padding: 0 10%;
+}
+
+.head::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.site-title {
+  font-size: 3rem;
+  margin: 0;
+  /* margin-left: 10%; */
+  float: left;
+}
+
+.user-name a {
+  font-size: 2rem;
+  float: right;
+  /* margin-left: 10%; */
+}
+
+.wrapper {
+  padding: 0 20%;
+}
+
+.mur {
+  background: white;
+  border: solid rgb(122, 122, 122) 1px;
+  border-top: none;
+  font-size: 1.3rem;
+  padding: 2% 5%;
+  /* opacity: 0; */
+  /* display: none; */
+}
+
+/* 後でjsかjQでやる */
+/* #mur:hover {
+  background: rgb(182, 255, 133);
+  cursor: pointer;
+} */
+
+
+.mur:nth-of-type(1) {
+  border-top: solid rgb(122, 122, 122) 1px;
+}
+
+.mur p {
+  margin-bottom: 3%;
+}
+
+.mur a, .mur span {
+  margin-right: 1rem;
+}
+
+/* 編集フォーム */
+
+.edit-form {
+  display: none;
+  background: rgb(155, 155, 155);
+  border: 1px solid black;
+  width: 30%;
+  padding: 5%;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+/* 削除確認 */
+
+.delete-form {
+  display: none;
+  background: rgb(155, 155, 155);
+  border: 1px solid black;
+  width: 30%;
+  padding: 5%;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+/* 投稿ボタン */
+
+.mur-btn {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+}
+
+/* 投稿フォーム */
+.mur-form {
+  display: none;
+  background: rgb(155, 155, 155);
+  border: 1px solid black;
+  width: 30%;
+  padding: 5%;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+/* フォロー確認 */
+
+.follow-check {
+  display: none;
+  background: rgb(155, 155, 155);
+  border: 1px solid black;
+  width: 30%;
+  padding: 5%;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+/* ログインページ */
+
+.login-form {
+  background: white;
+  border: solid rgb(122, 122, 122) 1px;
+  font-size: 1.5rem;
+  padding: 2% 5%;
+}
+
+/* .login-form p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+} */
+
+.login-form label {
+  font-size: 2rem;
+}
+
+.login-form input {
+  margin-bottom: 1rem;
+}
+
+/* プロフィールページ */
+
+.profile {
+  background: white;
+  border: solid rgb(122, 122, 122) 1px;
+  font-size: 1.3rem;
+  padding: 2% 5%;
+  margin-bottom: 2rem;
+}
+
+/* フォロー確認ページ */
+
+.follow {
+  background: white;
+  border: solid rgb(122, 122, 122) 1px;
+  font-size: 1.3rem;
+  padding: 2% 5%;
+  margin-bottom: 2rem;
+}
+
+.follow-user {
+  background: white;
+  border: solid rgb(122, 122, 122) 1px;
+  border-top: none;
+  font-size: 1.3rem;
+  padding: 2% 5%;
+}
+
+.follow-user:nth-of-type(1) {
+  border-top: solid rgb(122, 122, 122) 1px;
+}
+
+
+/* 確認用ページ */
+
+.check-words {
+  font-size: 4rem;
+}
+
+.check-back {
+  font-size: 1.5rem;
+}
+
+/* フッター */
+
+.logout-link {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 5% 0;
+}
